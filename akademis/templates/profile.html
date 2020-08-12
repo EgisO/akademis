@@ -1,0 +1,18 @@
+<form method='POST'>
+
+    <label>İsim soyisim</label>
+    <input type="text" name="get_name" value="{{get_name}}">
+    <input type="submit" name="name_button" value="Name">
+
+    <label>Tags</label>
+    <input type="text" name="get_tags" value="{{get_tags}}">
+    <input type="submit" name="name_button" value="Tag">
+</form>
+    </br>
+
+    <ul>
+        {% for _tag in _tags %}
+            <li> {{ _tag }} </li>
+        {% endfor %}
+    </ul>
+
